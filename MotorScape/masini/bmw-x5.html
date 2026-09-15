@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BMW X5 - Motorscape</title>
+  <link rel="stylesheet" href="../css/stil-pagina-masina.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../index.html"><h1>Motorscape</h1></a>
+  <section class="navigation-container">
+    <div class="navigation-links">
+      <a href="../acasa.html" class="nav-btn">Acasă</a>
+      <a href="../index.html" class="nav-btn">Pagina principală</a>
+      <a href="../despre.html" class="nav-btn">Despre</a>
+      <a href="../contact.html" class="nav-btn">Contact</a>
+    </div>
+  </section>
+</header>
+
+<div class="container">
+  <a href="../index.html" class="back-btn">Înapoi la listă</a>
+  <h1 class="car-title">BMW X5</h1>
+
+  <div class="car-content">
+    <div class="gallery-wrapper">
+      <div class="gallery-container">
+        <div class="gallery">
+          <img class="gallery-image" src="../images/bmw-x5/1.jpg" alt="BMW X5 - 1">
+          <img class="gallery-image" src="../images/bmw-x5/2.jpg" alt="BMW X5 - 2">
+          <img class="gallery-image" src="../images/bmw-x5/3.jpg" alt="BMW X5 - 3">
+          <img class="gallery-image" src="../images/bmw-x5/4.jpg" alt="BMW X5 - 4">
+          <img class="gallery-image" src="../images/bmw-x5/5.jpg" alt="BMW X5 - 5">
+          <img class="gallery-image" src="../images/bmw-x5/6.jpg" alt="BMW X5 - 6">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">❮</button>
+        <button class="next" onclick="moveSlide(1)">❯</button>
+      </div>
+      <span class="price-tag">45.000€</span>
+    </div>
+
+    <div class="gallery-indicators" id="gallery-indicators"></div>
+
+    <div class="car-details">
+      <h2>Caracteristici Tehnice:</h2>
+      <div class="specs-details">
+
+        <section>
+          <h3>Motor & Performanță</h3>
+          <ul>
+            <li><strong>Motor:</strong> 3.0L Diesel, 6 cilindri, 265 CP</li>
+            <li><strong>Putere:</strong> 265 CP</li>
+            <li><strong>Cutie de viteză:</strong> Automată cu 8 trepte</li>
+            <li><strong>Tracțiune:</strong> Integrală xDrive</li>
+            <li><strong>Suspensie:</strong> Suspensie adaptivă cu moduri de confort și sport</li>
+            <li><strong>Autonomie:</strong> 1180 km (în condiții de drum mixt)</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Dimensiuni & Greutate</h3>
+          <ul>
+            <li><strong>Dimensiuni:</strong> Lungime 4920 mm, Lățime 1938 mm, Înălțime 1762 mm</li>
+            <li><strong>Greutate:</strong> 2200 kg</li>
+            <li><strong>Număr uși:</strong> 5</li>
+            <li><strong>Capacitate rezervor:</strong> 85L</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Consum & Emisii</h3>
+          <ul>
+            <li><strong>Consum mediu:</strong> 7.2 L/100km</li>
+            <li><strong>Emisii CO2:</strong> 168 g/km</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Dotări Tehnice</h3>
+          <ul>
+            <li><strong>Sistem de navigație:</strong> iDrive 7.0 cu hartă 3D și actualizare în timp real</li>
+            <li><strong>Primă înmatriculare:</strong> 2019</li>
+            <li><strong>Vârsta vehiculului:</strong> 4 ani</li>
+            <li><strong>Kilometraj:</strong> 70.000 km</li>
+            <li><strong>Culoare:</strong> Alb Glacier</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Confort & Interior</h3>
+          <ul>
+            <li><strong>Răcire și încălzire:</strong> Scaune încălzite și ventilate pe față și spate</li>
+          </ul>
+        </section>
+
+      </div>
+
+
+      <h2>Descriere:</h2>
+      <p>
+        BMW X5 este un SUV de lux care îmbină perfect eleganța cu performanța. Cu un motor puternic de 3.0L Diesel și tracțiune integrală xDrive, acest model oferă o experiență de conducere superioară atât pe drumurile urbane, cât și în condiții off-road. Interiorul este rafinat, cu materiale de calitate premium și tehnologie de ultimă oră, inclusiv un sistem de infotainment iDrive de 12.3 inch.
+      </p>
+      <p>
+        Siguranța este o prioritate, iar X5 vine echipat cu sisteme avansate de siguranță, inclusiv controlul electronic al stabilității (ESP), asistență la menținerea benzii și frânare automată de urgență. Performanța în condiții de drum mai dificile este îmbunătățită de suspensia adaptivă și sistemele de asistență la parcare.
+      </p>
+      <p>
+        Dacă ești în căutarea unui SUV care combină stilul cu utilitatea și tehnologia, BMW X5 este alegerea perfectă pentru tine. Fie că este vorba de călătorii lungi pe autostradă sau excursii în natură, acest model te va impresiona prin versatilitate, confort și siguranță.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img id="lightbox-image" class="lightbox-content" src="" alt="Zoomed">
+</div>
+
+<!-- Zona Dotări și Specificații -->
+<section class="additional-features">
+  <h2>Dotări Suplimentare:</h2>
+  <div class="features-grid">
+    <div class="feature-item">Faruri LED adaptive</div>
+    <div class="feature-item">Asistent de parcare automat</div>
+    <div class="feature-item">Pachet M Sport</div>
+    <div class="feature-item">Sistem audio Harman Kardon</div>
+    <div class="feature-item">Head-up display</div>
+    <div class="feature-item">Trapă panoramică</div>
+    <div class="feature-item">Încărcare wireless pentru telefon</div>
+    <div class="feature-item">Asistent la menținerea benzii</div>
+  </div>
+</section>
+
+<!-- Zona Contact cu Vânzătorul -->
+<section class="contact-seller">
+  <h2>Contactează Vânzătorul</h2>
+  <div class="contact-container">
+    <!-- Formular -->
+    <form action="mailto:vanzator@autolux.ro" method="post" enctype="text/plain">
+      <label for="name">Nume:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mesaj:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Trimite Mesajul</button>
+    </form>
+
+    <!-- Informațiile Vânzătorului -->
+    <div class="seller-info">
+      <img class="seller-image" src="../images/bmw-x5/vanzator.jpg" alt="Vânzător">
+      <div class="seller-details">
+        <p><strong>Vânzător:</strong> Andrei Popescu</p>
+        <p><strong>Locație:</strong> Teleorman</p>
+        <div class="seller-rating">
+          <h3>Rating vânzător:</h3>
+          <div class="stars">
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star filled"></div>
+            <div class="star half-filled"></div>
+          </div>
+          <p>4.5/5</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Motorscape - Toate drepturile rezervate</p>
+  </div>
+</footer>
+<script src="../js/script-pagina-masina.js"></script>
+</body>
+</html>
+
+
+

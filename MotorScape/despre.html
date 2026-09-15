@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Motorscape - Despre</title>
+    <link rel="stylesheet" href="css/stil-despre.css">
+</head>
+<body>
+
+<div class="slideshow-container">
+    <img src="images/acasa/1.jpg" class="slide active" alt="Masina 1">
+    <img src="images/acasa/2.jpg" class="slide" alt="Masina 2"/>
+    <img src="images/acasa/3.jpg" class="slide" alt="Masina 3">
+    <img src="images/acasa/4.jpg" class="slide" alt="Masina 4">
+    <img src="images/acasa/5.jpg" class="slide" alt="Masina 5">
+
+    <div class="overlay">
+        <div class="overlay-content">
+            <div class="text-slide active">
+                <h1>Despre Motorscape</h1>
+                <p>Motorscape este o platformă de top care combină pasiunea pentru automobile cu o experiență de cumpărare unică. Fiecare vehicul din portofoliul nostru este atent selecționat, astfel încât să îți oferim doar cele mai bune opțiuni pentru nevoile tale. Suntem dedicați să facem din căutarea unei mașini o experiență plăcută și ușoară, oferindu-ți nu doar un automobil, ci o adevărată legătură cu pasiunile tale.</p>
+                <p>În Motorscape, nu doar vânzarea este importantă, ci și procesul de consiliere și suport continuu, pentru ca tu să te simți confortabil și încrezător în alegerea ta.</p>
+            </div>
+
+            <div class="text-slide">
+                <h1>Misiunea noastră</h1>
+                <p>La Motorscape, misiunea noastră este să oferim clienților o experiență de cumpărare fără egal, prin furnizarea celor mai performante și de încredere automobile din lume. Ne concentrăm pe satisfacerea celor mai exigente standarde și cerințe ale clienților noștri, printr-o selecție riguroasă a fiecărei mașini pe care o punem la vânzare.</p>
+                <p>Împreună cu mașinile noastre de înaltă calitate, îți oferim un serviciu personalizat, dedicat, care îți va ghida fiecare pas în căutarea autovehiculului perfect.</p>
+            </div>
+
+            <div class="text-slide">
+                <h1>Ce oferim?</h1>
+                <ul>
+                    <li><strong>Mașini atent verificate:</strong> Fiecare vehicul este supus unor teste și verificări riguroase înainte de a fi disponibil pentru vânzare. Fiecare detaliu este inspectat, pentru a ne asigura că îți oferim doar cele mai bune automobile.</li>
+                    <li><strong>Consultanță personalizată:</strong> Echipa noastră de experți te va ghida pe tot parcursul procesului de cumpărare, oferindu-ți recomandări și soluții adaptate nevoilor tale specifice.</li>
+                    <li><strong>Servicii premium de vânzare:</strong> Ne asigurăm că fiecare client beneficiază de cele mai bune condiții de cumpărare, inclusiv posibilitatea de a personaliza și de a alege dintr-o gamă largă de opțiuni pentru mașina dorită.</li>
+                    <li><strong>Suport post-vânzare:</strong> Oferim asistență și suport continuu chiar și după finalizarea achiziției, astfel încât să te simți mereu în siguranță cu alegerea ta.</li>
+                </ul>
+            </div>
+
+            <div class="text-slide">
+                <h1>De ce să alegi Motorscape?</h1>
+                <p>Motorscape este alegerea ideală pentru oricine își dorește mai mult decât o simplă achiziție de automobil. Punem la dispoziția ta o selecție exclusivă de mașini, verificate cu atenție și testate riguros, pentru a îți oferi o experiență de condus impecabilă și fără griji.</p>
+                <p>Ne diferențiem prin transparența totală a procesului de vânzare și prin atenția deosebită pe care o acordăm fiecărui client. Fiecare tranzacție este însoțită de un suport constant, asigurându-ne că îți oferim cele mai bune condiții pentru achiziția unui automobil de calitate.</p>
+                <p>În plus, prin parteneriatele noastre cu lideri din industrie și prin colaborările cu profesioniști, garantăm că fiecare mașină vândută este mai mult decât un simplu vehicul – este o investiție în siguranța și confortul tău pe termen lung.</p>
+            </div>
+
+            <!-- Săgețile pentru schimbarea textului -->
+            <a class="prev" onclick="changeText(-1)">&#10094;</a>
+            <a class="next" onclick="changeText(1)">&#10095;</a>
+        </div>
+
+        <!-- Navigația separat, direct în overlay -->
+        <div class="navigation-links">
+            <a href="acasa.html" class="nav-btn">Acasă</a>
+            <a href="index.html" class="nav-btn">Pagina principală</a>
+            <a href="despre.html" class="nav-btn">Despre</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer">
+            <p>&copy; 2025 Motorscape - Toate drepturile rezervate</p>
+        </div>
+    </div>
+</div>
+
+<canvas id="particles"></canvas>
+<script src="js/acasa.js"></script> <!-- folosim același script pentru slideshow -->
+</body>
+</html>

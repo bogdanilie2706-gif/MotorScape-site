@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Motorscape - Contact</title>
+    <link rel="stylesheet" href="css/stil-contact.css">
+</head>
+<body>
+
+<div class="slideshow-container">
+    <img src="images/acasa/1.jpg" class="slide active" alt="Masina 1">
+    <img src="images/acasa/2.jpg" class="slide" alt="Masina 2"/>
+    <img src="images/acasa/3.jpg" class="slide" alt="Masina 3">
+    <img src="images/acasa/4.jpg" class="slide" alt="Masina 4">
+    <img src="images/acasa/5.jpg" class="slide" alt="Masina 5">
+
+    <!-- Overlay pentru formular -->
+    <div class="overlay">
+        <div class="left-cover"></div>
+        <div class="overlay-content">
+            <h1>Contactează-ne</h1>
+            <p>Suntem aici pentru a te ajuta! Completează formularul de mai jos pentru a ne trimite o întrebare sau o solicitare.</p>
+
+            <!-- Formular de contact -->
+            <form action="submit_form.php" method="post">
+                <label for="nume">Numele tău:</label>
+                <input type="text" id="nume" name="nume" required>
+
+                <label for="email">Adresa de email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mesaj">Mesajul tău:</label>
+                <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+
+                <button type="submit" class="btn-submit">Trimite mesajul</button>
+            </form>
+        </div>
+
+        <!-- Navigația cu linkuri -->
+        <div class="navigation-links">
+            <a href="acasa.html" class="nav-btn">Acasă</a>
+            <a href="index.html" class="nav-btn">Pagina principală</a>
+            <a href="despre.html" class="nav-btn">Despre</a>
+            <a href="contact.html" class="nav-btn">Contact</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-container">
+        <div class="footer">
+            <p>&copy; 2025 Motorscape - Toate drepturile rezervate</p>
+        </div>
+    </div>
+</div>
+
+<canvas id="particles"></canvas>
+<script src="js/acasa.js"></script>
+</body>
+</html>

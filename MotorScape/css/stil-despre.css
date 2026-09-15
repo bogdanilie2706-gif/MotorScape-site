@@ -1,0 +1,197 @@
+/* Reset de bază */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Container slideshow */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(1);
+    transition: transform 20s ease, opacity 1.5s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Overlay container */
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 950px; /* sau cât vrei să fie lățimea */
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+     animation: moveUp 2s ease forwards;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.6);
+    backdrop-filter: blur(15px);
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+/* Conținutul transparent */
+.overlay-content {
+    position: relative;
+    background: transparent;
+    border-radius: 20px;
+    animation: fadeIn 2s ease;
+    width: 80%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay-content h1{
+    color: #ff7f50;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px rgb(255, 127, 80);
+}
+
+.overlay-content p, ul{
+    color: #ddd;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px rgba(255,255,255,0.7);
+}
+
+.text-slide {
+    display: none;
+    animation: fadeIn 2s ease;
+}
+
+.text-slide.active {
+    display: block;
+}
+
+/* Navigația de butoane */
+.navigation-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Săgețile de navigare acum în interiorul overlay */
+.prev, .next {
+    position: absolute;
+    top: 50%; /* Poziționează-le pe verticală la mijloc */
+    transform: translateY(-50%); /* Ajustează pentru centrare perfectă */
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    z-index: 3; /* Asigură-te că săgețile sunt deasupra altor elemente */
+    transition: 0.5s ease;
+}
+
+/* Poziționarea săgeților */
+.prev {
+    left: -20px; /* Ajustează distanța față de marginea stângă a containerului */
+}
+
+.next {
+    right: -20px; /* Ajustează distanța față de marginea dreaptă a containerului */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    scale: 1.04
+}
+
+
+.nav-btn {
+    background: rgba(0,0,0,0.6);
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+.nav-btn:hover {
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.1);
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+.footer-container {
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    z-index: 0;
+    margin: 0 auto
+}
+
+.footer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 0;
+}
+
+.footer p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Animații */
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes moveUp {
+    0% {transform: translatex(-200px); opacity: 0;}
+    100% {transform: translatex(0); opacity: 1;}
+}
+

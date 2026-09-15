@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Honda Civic - Motorscape</title>
+    <link rel="stylesheet" href="../css/stil-pagina-masina.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="../index.html"><h1>Motorscape</h1></a>
+    <section class="navigation-container">
+        <div class="navigation-links">
+            <a href="../acasa.html" class="nav-btn">Acasă</a>
+            <a href="../index.html" class="nav-btn">Pagina principală</a>
+            <a href="../despre.html" class="nav-btn">Despre</a>
+            <a href="../contact.html" class="nav-btn">Contact</a>
+        </div>
+    </section>
+</header>
+
+<div class="container">
+    <a href="../index.html" class="back-btn">Înapoi la listă</a>
+    <h1 class="car-title">Honda Civic</h1>
+
+    <div class="car-content">
+        <div class="gallery-wrapper">
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img class="gallery-image" src="../images/honda-civic/1.jpg" alt="Honda Civic - 1">
+                    <img class="gallery-image" src="../images/honda-civic/2.jpg" alt="Honda Civic - 2">
+                    <img class="gallery-image" src="../images/honda-civic/3.jpg" alt="Honda Civic - 3">
+                    <img class="gallery-image" src="../images/honda-civic/4.jpg" alt="Honda Civic - 4">
+                    <img class="gallery-image" src="../images/honda-civic/5.jpg" alt="Honda Civic - 5">
+                    <img class="gallery-image" src="../images/honda-civic/6.jpg" alt="Honda Civic - 6">
+                    <img class="gallery-image" src="../images/honda-civic/7.jpg" alt="Honda Civic - 7">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>
+            <span class="price-tag">17.500€</span>
+        </div>
+
+        <div class="gallery-indicators" id="gallery-indicators"></div>
+
+        <div class="car-details">
+            <h2>Caracteristici Tehnice:</h2>
+            <div class="specs-details">
+
+                <section>
+                    <h3>Motor & Performanță</h3>
+                    <ul>
+                        <li><strong>Motor:</strong> 1.5L Benzină, 4 cilindri, 182 CP</li>
+                        <li><strong>Putere:</strong> 182 CP</li>
+                        <li><strong>Cutie de viteză:</strong> Manuală cu 6 trepte</li>
+                        <li><strong>Tracțiune:</strong> Față</li>
+                        <li><strong>Suspensie:</strong> Sport adaptivă</li>
+                        <li><strong>Autonomie:</strong> 800 km (în condiții de drum mixt)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Dimensiuni & Greutate</h3>
+                    <ul>
+                        <li><strong>Dimensiuni:</strong> Lungime 4518 mm, Lățime 1799 mm, Înălțime 1434 mm</li>
+                        <li><strong>Greutate:</strong> 1300 kg</li>
+                        <li><strong>Număr uși:</strong> 5</li>
+                        <li><strong>Capacitate rezervor:</strong> 46L</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Consum & Emisii</h3>
+                    <ul>
+                        <li><strong>Consum mediu:</strong> 5.8 L/100km</li>
+                        <li><strong>Emisii CO2:</strong> 131 g/km</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Dotări Tehnice</h3>
+                    <ul>
+                        <li><strong>Sistem de navigație:</strong> Honda Connect cu ecran tactil 7 inch</li>
+                        <li><strong>Primă înmatriculare:</strong> 2020</li>
+                        <li><strong>Vârsta vehiculului:</strong> 3 ani</li>
+                        <li><strong>Kilometraj:</strong> 45.000 km</li>
+                        <li><strong>Culoare:</strong> Albastru Sportiv</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Confort & Interior</h3>
+                    <ul>
+                        <li><strong>Scaune:</strong> Sport cu încălzire electrică față</li>
+                        <li><strong>Climatizare:</strong> Automată pe două zone</li>
+                        <li><strong>Interior:</strong> Tapițerie mixtă textil/piele</li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <h2>Descriere:</h2>
+            <p>
+                Honda Civic reprezintă perfect îmbinarea dintre sportivitate și eficiență. Cu motorul său de 1.5L turbo
+                și cutia manuală cu 6 trepte, oferă o experiență de conducere dinamică și angajantă. Design-ul modern și
+                agresiv este completat de un interior spațios și bine echipat.
+            </p>
+            <p>
+                Mașina beneficiază de pachetul complet Honda Sensing care include multiple sisteme de siguranță precum:
+                asistență la menținerea benzii, cruise control adaptiv și sistem de frânare automată de urgență.
+                Consumul redus și fiabilitatea specifică mărcii Honda fac din acest model o alegere excelentă.
+            </p>
+            <p>
+                Acest exemplar este într-o stare tehnică și estetică foarte bună, cu istoric complet de service și toate
+                reviziile efectuate la timp în rețeaua autorizată Honda. Este perfect atât pentru utilizarea zilnică în
+                oraș, cât și pentru călătorii lungi, oferind un echilibru excelent între confort, performanță și
+                economie.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-image" class="lightbox-content" src="" alt="Zoomed">
+</div>
+
+<!-- Zona Dotări și Specificații -->
+<section class="additional-features">
+    <h2>Dotări Suplimentare:</h2>
+    <div class="features-grid">
+        <div class="feature-item">Faruri Full LED</div>
+        <div class="feature-item">Apple CarPlay/Android Auto</div>
+        <div class="feature-item">Senzori parcare față/spate</div>
+        <div class="feature-item">Sistem audio premium</div>
+        <div class="feature-item">Cameră marșarier</div>
+        <div class="feature-item">Keyless Entry & Start</div>
+        <div class="feature-item">Bluetooth</div>
+        <div class="feature-item">Pilot automat adaptiv</div>
+    </div>
+</section>
+
+<!-- Zona Contact cu Vânzătorul -->
+<section class="contact-seller">
+    <h2>Contactează Vânzătorul</h2>
+    <div class="contact-container">
+        <!-- Formular -->
+        <form action="mailto:vanzator@autolux.ro" method="post" enctype="text/plain">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Trimite Mesajul</button>
+        </form>
+
+        <!-- Informațiile Vânzătorului -->
+        <div class="seller-info">
+            <img class="seller-image" src="../images/honda-civic/vanzator.jpg" alt="Vânzător">
+            <div class="seller-details">
+                <p><strong>Vânzător:</strong> Maria Ionescu</p>
+                <p><strong>Locație:</strong> București</p>
+                <div class="seller-rating">
+                    <h3>Rating vânzător:</h3>
+                    <div class="stars">
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star half-filled"></div>
+                    </div>
+                    <p>4.7/5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2025 Motorscape - Toate drepturile rezervate</p>
+    </div>
+</footer>
+<script src="../js/script-pagina-masina.js"></script>
+</body>
+</html>

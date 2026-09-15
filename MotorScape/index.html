@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Motorscape - Vânzare Mașini</title>
+  <link rel="stylesheet" href="css/stil-pagina.css">
+</head>
+<body>
+  <header>
+    <h1>Motorscape</h1>
+    <section class="navigation-container">
+      <div class="navigation-links">
+        <a href="acasa.html" class="nav-btn">Acasă</a>
+        <a href="index.html" class="nav-btn">Pagina principală</a>
+        <a href="despre.html" class="nav-btn">Despre</a>
+        <a href="contact.html" class="nav-btn">Contact</a>
+      </div>
+    </section>
+    <nav>
+      <div class="filters-container">
+        <div class="filter-item">
+          <label for="search-input">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <circle cx="11" cy="11" r="8" stroke="#333" stroke-width="2"/>
+              <line x1="17" y1="17" x2="22" y2="22" stroke="#333" stroke-width="2"/>
+            </svg>
+            Căutare:
+          </label>
+          <input type="text" id="search-input" placeholder="Caută după nume...">
+        </div>
+
+        <div class="filter-item">
+          <label for="marca-filter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M4 6H20M4 12H20M4 18H11" stroke="#333" stroke-width="2"/>
+            </svg>
+            Marcă:
+          </label>
+          <select id="marca-filter">
+            <option value="">Toate mărcile</option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Tesla">Tesla</option>
+            <option value="Mercedes">Mercedes</option>
+          </select>
+        </div>
+
+        <div class="filter-item">
+          <label for="pret-filter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M12 1V23M5 6H19M5 18H19" stroke="#333" stroke-width="2"/>
+            </svg>
+            Preț:
+          </label>
+          <select id="pret-filter">
+            <option value="">Toate prețurile</option>
+            <option value="sub20000">Sub 20.000€</option>
+            <option value="20000-40000">20.000€ - 40.000€</option>
+            <option value="peste40000">Peste 40.000€</option>
+          </select>
+        </div>
+
+        <div class="filter-item">
+          <label for="sort-filter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9L12 15L18 9" stroke="#333" stroke-width="2"/>
+            </svg>
+            Sortare:
+          </label>
+          <select id="sort-filter">
+            <option value="">Fără sortare</option>
+            <option value="crescator">Crescător</option>
+            <option value="descrescator">Descrescător</option>
+          </select>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="car-list">
+    <div class="car-card-container">
+      <div class="car-card" data-marca="BMW" data-pret="45000" data-an="2021" data-kilometraj="20000" data-motor="3.0L" data-tractiune="AWD">
+        <h3><a href="masini/bmw-x5.html">BMW X5</a></h3>
+        <div class="price-badge">45.000€</div>
+        <a href="masini/bmw-x5.html">
+          <img src="images/bmw-x5/1.jpg" alt="bmw x5">
+        </a>
+        <p>An: 2021</p>
+        <p>Kilometraj: 20.000 km</p>
+        <p>Motor: 3.0L</p>
+        <p>Tracțiune: AWD</p>
+      </div>
+    </div>
+
+    <div class="car-card-container">
+      <div class="car-card" data-marca="Audi" data-pret="27000" data-an="2019" data-kilometraj="119000" data-motor="2.0L" data-tractiune="FWD">
+        <h3><a href="masini/audi-a4.html">Audi A4</a></h3>
+        <div class="price-badge">27.000€</div>
+        <a href="masini/audi-a4.html">
+          <img src="images/audi-a4/1.jpg" alt="Audi A4">
+        </a>
+        <p>An: 2019</p>
+        <p>Kilometraj: 119.000 km</p>
+        <p>Motor: 2.0L</p>
+        <p>Tracțiune: FWD</p>
+      </div>
+    </div>
+
+    <div class="car-card-container">
+      <div class="car-card" data-marca="Tesla" data-pret="42000" data-an="2022" data-kilometraj="25000" data-motor="Electric" data-tractiune="AWD">
+        <h3><a href="masini/tesla-model-3.html">Tesla Model 3</a></h3>
+        <div class="price-badge">42.000€</div>
+        <a href="masini/tesla-model-3.html"><img src="images/tesla-model-3/1.jpg" alt="Tesla Model 3"></a>
+        <p>An: 2022</p>
+        <p>Kilometraj: 25.000 km</p>
+        <p>Motor: Electric</p>
+        <p>Tracțiune: AWD</p>
+      </div>
+    </div>
+
+    <div class="car-card-container">
+      <div class="car-card special-card" data-marca="Ferrari" data-pret="220000" data-an="2020" data-kilometraj="49000" data-motor="6.3L" data-tractiune="RWD">
+        <h3><a href="masini/ferrari-f12.html">Ferrari F12</a></h3>
+        <div class="price-badge">220.000€</div>
+        <a href="masini/ferrari-f12.html">
+          <img src="images/ferrari-f12/1.jpg" alt="Ferrari F12">
+        </a>
+        <p>An: 2020</p>
+        <p>Kilometraj: 49.000 km</p>
+        <p>Motor: 6.3L</p>
+        <p>Tracțiune: RWD</p>
+      </div>
+    </div>
+
+    <div class="car-card-container">
+      <div class="car-card" data-marca="Mercedes" data-pret="35000" data-an="2021" data-kilometraj="85000" data-motor="2.0L" data-tractiune="AWD">
+        <h3><a href="masini/mercedes-e-class.html">Mercedes-Benz E 350</a></h3>
+        <div class="price-badge">35.000€</div>
+        <a href="masini/mercedes-e-class.html">
+          <img src="images/mercedes-e-class/1.jpg" alt="Mercedes-Benz E-Class">
+        </a>
+        <p>An: 2021</p>
+        <p>Kilometraj: 85.000 km</p>
+        <p>Motor: 2.0L</p>
+        <p>Tracțiune: AWD</p>
+      </div>
+    </div>
+
+    <div class="car-card-container">
+      <div class="car-card" data-marca="Volkswagen" data-pret="16000" data-an="2020" data-kilometraj="70000" data-motor="1.6L" data-tractiune="FWD">
+        <h3><a href="masini/vw-polo.html">Volkswagen Polo</a></h3>
+        <div class="price-badge">16.000€</div>
+        <a href="masini/vw-polo.html">
+          <img src="images/vw-polo/1.jpg" alt="Volkswagen Polo">
+        </a>
+        <p>An: 2020</p>
+        <p>Kilometraj: 70.000 km</p>
+        <p>Motor: 1.6L</p>
+        <p>Tracțiune: FWD</p>
+      </div>
+    </div>
+
+    <div class="car-card-container">
+      <div class="car-card" data-marca="Honda" data-pret="16000" data-an="2017" data-kilometraj="81000" data-motor="1.0L" data-tractiune="FWD">
+        <h3><a href="masini/honda-civic.html">Honda Civic</a></h3>
+        <div class="price-badge">16.000€</div>
+        <a href="masini/honda-civic.html">
+          <img src="images/honda-civic/1.jpg" alt="Honda Civic">
+        </a>
+        <p>An: 2017</p>
+        <p>Kilometraj: 81.000 km</p>
+        <p>Motor: 1.0L</p>
+        <p>Tracțiune: FWD</p>
+      </div>
+    </div>
+
+    <div class="car-card-container">
+      <div class="car-card special-card" data-marca="Porsche" data-pret="95000" data-an="2020" data-kilometraj="10000" data-motor="3.0L" data-tractiune="AWD">
+        <h3><a href="masini/porsche-911.html">Porsche 911</a></h3>
+        <div class="price-badge">95.000€</div>
+        <a href="masini/porsche-911.html">
+          <img src="images/porsche-911/1.jpg" alt="Porsche 911">
+        </a>
+        <p>An: 2020</p>
+        <p>Kilometraj: 70.000 km</p>
+        <p>Motor: 3.0L</p>
+        <p>Tracțiune: AWD</p>
+      </div>
+    </div>
+
+    <div class="car-card-container">
+      <div class="car-card" data-marca="Jaguar" data-pret="110000" data-an="2024" data-kilometraj="5000" data-motor="5.0L" data-tractiune="AWD">
+        <h3><a href="masini/jaguar-f-pace.html">Jaguar F-Pace</a></h3>
+        <div class="price-badge">110.000€</div>
+        <a href="masini/jaguar-f-pace.html">
+          <img src="images/jaguar-f-pace/1.jpg" alt="Jaguar F-Pace">
+        </a>
+        <p>An: 2024</p>
+        <p>Kilometraj: 5.000 km</p>
+        <p>Motor: 5.0L</p>
+        <p>Tracțiune: AWD</p>
+      </div>
+    </div>
+
+    <div class="car-card-container">
+      <div class="car-card" data-marca="Lexus" data-pret="80000" data-an="2018" data-kilometraj="60000" data-motor="5.0L" data-tractiune="RWD">
+        <h3><a href="masini/lexus-lc500.html">Lexus LC 500</a></h3>
+        <div class="price-badge">50.000€</div>
+        <a href="masini/lexus-lc500.html">
+          <img src="images/lexus-lc500/1.jpg" alt="Lexus RX 450h">
+        </a>
+        <p>An: 2021</p>
+        <p>Kilometraj: 12.000 km</p>
+        <p>Motor: 3.5L V6</p>
+        <p>Tracțiune: RWD</p>
+      </div>
+    </div>
+  </main>
+
+  <section class="contact">
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2025 Motorscape - Toate drepturile rezervate</p>
+      </div>
+    </footer>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>

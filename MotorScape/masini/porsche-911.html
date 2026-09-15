@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Porsche 911 - Motorscape</title>
+    <link rel="stylesheet" href="../css/stil-pagina-masina.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="../index.html"><h1>Motorscape</h1></a>
+    <section class="navigation-container">
+        <div class="navigation-links">
+            <a href="../acasa.html" class="nav-btn">Acasă</a>
+            <a href="../index.html" class="nav-btn">Pagina principală</a>
+            <a href="../despre.html" class="nav-btn">Despre</a>
+            <a href="../contact.html" class="nav-btn">Contact</a>
+        </div>
+    </section>
+</header>
+
+<div class="container">
+    <a href="../index.html" class="back-btn">Înapoi la listă</a>
+    <h1 class="car-title">Porsche 911</h1>
+
+    <div class="car-content">
+        <div class="gallery-wrapper">
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img class="gallery-image" src="../images/porsche-911/1.jpg" alt="Porsche 911 - 1">
+                    <img class="gallery-image" src="../images/porsche-911/2.jpg" alt="Porsche 911 - 2">
+                    <img class="gallery-image" src="../images/porsche-911/3.jpg" alt="Porsche 911 - 3">
+                    <img class="gallery-image" src="../images/porsche-911/4.jpg" alt="Porsche 911 - 4">
+                    <img class="gallery-image" src="../images/porsche-911/5.jpg" alt="Porsche 911 - 5">
+                    <img class="gallery-image" src="../images/porsche-911/6.jpg" alt="Porsche 911 - 6">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>
+            <span class="price-tag">120.000€</span>
+        </div>
+
+        <div class="gallery-indicators" id="gallery-indicators"></div>
+
+        <div class="car-details">
+            <h2>Caracteristici Tehnice:</h2>
+            <div class="specs-details">
+
+                <section>
+                    <h3>Motor & Performanță</h3>
+                    <ul>
+                        <li><strong>Motor:</strong> 3.0L Twin-Turbo Boxer 6 cilindri</li>
+                        <li><strong>Putere:</strong> 450 CP</li>
+                        <li><strong>Cuplu:</strong> 530 Nm</li>
+                        <li><strong>0-100 km/h:</strong> 3.4 secunde</li>
+                        <li><strong>Viteză maximă:</strong> 308 km/h</li>
+                        <li><strong>Cutie de viteză:</strong> PDK cu 8 trepte</li>
+                        <li><strong>Tracțiune:</strong> Integrală</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Dimensiuni & Greutate</h3>
+                    <ul>
+                        <li><strong>Lungime:</strong> 4519 mm</li>
+                        <li><strong>Lățime:</strong> 1852 mm</li>
+                        <li><strong>Înălțime:</strong> 1298 mm</li>
+                        <li><strong>Greutate:</strong> 1580 kg</li>
+                        <li><strong>Volum portbagaj:</strong> 132 L</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Consum & Emisii</h3>
+                    <ul>
+                        <li><strong>Consum urban:</strong> 12.8 L/100km</li>
+                        <li><strong>Consum extraurban:</strong> 7.9 L/100km</li>
+                        <li><strong>Consum mixt:</strong> 9.6 L/100km</li>
+                        <li><strong>Emisii CO2:</strong> 218 g/km</li>
+                        <li><strong>Normă poluare:</strong> Euro 6d</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Dotări Tehnice</h3>
+                    <ul>
+                        <li><strong>An fabricație:</strong> 2021</li>
+                        <li><strong>Kilometraj:</strong> 15.000 km</li>
+                        <li><strong>Culoare:</strong> GT Silver Metallic</li>
+                        <li><strong>Interior:</strong> Piele Neagră</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Confort & Interior</h3>
+                    <ul>
+                        <li><strong>Scaune:</strong> Sport Plus cu încălzire și ventilație</li>
+                        <li><strong>Climatizare:</strong> Automată bi-zonă</li>
+                        <li><strong>Sistem audio:</strong> Burmester High-End</li>
+                    </ul>
+                </section>
+
+            </div>
+
+            <h2>Descriere:</h2>
+            <p>
+                Porsche 911 Carrera 4S reprezintă esența sportivității germane, oferind un echilibru perfect între
+                performanță și rafinament. Acest exemplar impecabil din 2021 vine echipat cu motorul twin-turbo de 3.0
+                litri care dezvoltă 450 CP, transmisia PDK cu 8 trepte și tracțiune integrală.
+            </p>
+            <p>
+                Mașina beneficiază de pachete opționale premium precum Sport Chrono Package, sistem de evacuare sport,
+                faruri LED Matrix, și jante Carrera Classic de 20"/21". Interiorul luxos este finisat cu piele de înaltă
+                calitate și dotări tehnologice avansate.
+            </p>
+            <p>
+                Cu doar 15.000 km parcurși și istoric complet de service la reprezentanță, acest 911 oferă experiența
+                completă a unui supercar modern, fiind perfect atât pentru utilizare zilnică cât și pentru sesiuni pe
+                circuit.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-image" class="lightbox-content" src="" alt="Zoomed">
+</div>
+
+<!-- Zona Dotări și Specificații -->
+<section class="additional-features">
+    <h2>Dotări Suplimentare:</h2>
+    <div class="features-grid">
+        <div class="feature-item">Sport Chrono Package</div>
+        <div class="feature-item">Faruri LED Matrix</div>
+        <div class="feature-item">Sistem audio Burmester</div>
+        <div class="feature-item">Jante Carrera Classic 20"/21"</div>
+        <div class="feature-item">Sistem evacuare sport</div>
+        <div class="feature-item">Pachet Sport Design</div>
+        <div class="feature-item">Suspensie PASM Sport</div>
+        <div class="feature-item">Volan GT Sport</div>
+    </div>
+</section>
+
+<!-- Zona Contact cu Vânzătorul -->
+<section class="contact-seller">
+    <h2>Contactează Vânzătorul</h2>
+    <div class="contact-container">
+        <!-- Formular -->
+        <form action="mailto:vanzator@autolux.ro" method="post" enctype="text/plain">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Trimite Mesajul</button>
+        </form>
+
+        <!-- Informațiile Vânzătorului -->
+        <div class="seller-info">
+            <img class="seller-image" src="../images/porsche-911/vanzator.jpg" alt="Vânzător">
+            <div class="seller-details">
+                <p><strong>Vânzător:</strong> Alexandru Ionescu</p>
+                <p><strong>Locație:</strong> București</p>
+                <div class="seller-rating">
+                    <h3>Rating vânzător:</h3>
+                    <div class="stars">
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star half-filled"></div>
+                    </div>
+                    <p>4.7/5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2025 Motorscape - Toate drepturile rezervate</p>
+    </div>
+</footer>
+<script src="../js/script-pagina-masina.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Audi A4 - Motorscape</title>
+    <link rel="stylesheet" href="../css/stil-pagina-masina.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="../index.html"><h1>Motorscape</h1></a>
+    <section class="navigation-container">
+        <div class="navigation-links">
+            <a href="../acasa.html" class="nav-btn">Acasă</a>
+            <a href="../index.html" class="nav-btn">Pagina principală</a>
+            <a href="../despre.html" class="nav-btn">Despre</a>
+            <a href="../contact.html" class="nav-btn">Contact</a>
+        </div>
+    </section>
+</header>
+
+<div class="container">
+    <a href="../index.html" class="back-btn">Înapoi la listă</a>
+    <h1 class="car-title">Audi A4</h1>
+
+    <div class="car-content">
+        <div class="gallery-wrapper">
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img class="gallery-image" src="../images/audi-a4/1.jpg" alt="Audi A4 - 1">
+                    <img class="gallery-image" src="../images/audi-a4/2.jpg" alt="Audi A4 - 2">
+                    <img class="gallery-image" src="../images/audi-a4/3.jpg" alt="Audi A4 - 3">
+                    <img class="gallery-image" src="../images/audi-a4/4.jpg" alt="Audi A4 - 4">
+                    <img class="gallery-image" src="../images/audi-a4/5.jpg" alt="Audi A4 - 5">
+                    <img class="gallery-image" src="../images/audi-a4/6.jpg" alt="Audi A4 - 6">
+                    <img class="gallery-image" src="../images/audi-a4/7.jpg" alt="Audi A4 - 7">
+                    <img class="gallery-image" src="../images/audi-a4/8.jpg" alt="Audi A4 - 8">
+                    <img class="gallery-image" src="../images/audi-a4/9.jpg" alt="Audi A4 - 9">
+                </div>
+              <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>
+            <span class="price-tag">35.000€</span>
+        </div>
+
+        <div class="gallery-indicators" id="gallery-indicators"></div>
+
+        <div class="car-details">
+            <h2>Caracteristici Tehnice:</h2>
+            <div class="specs-details">
+
+                <section>
+                    <h3>Motor & Performanță</h3>
+                    <ul>
+                        <li><strong>Motor:</strong> 2.0L TDI, 4 cilindri, 190 CP</li>
+                        <li><strong>Putere:</strong> 190 CP</li>
+                        <li><strong>Cutie de viteză:</strong> S tronic cu 7 trepte</li>
+                        <li><strong>Tracțiune:</strong> Quattro</li>
+                        <li><strong>Suspensie:</strong> Suspensie sport cu amortizare adaptivă</li>
+                        <li><strong>Autonomie:</strong> 1000 km (în condiții de drum mixt)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Dimensiuni & Greutate</h3>
+                    <ul>
+                        <li><strong>Dimensiuni:</strong> Lungime 4762 mm, Lățime 1847 mm, Înălțime 1431 mm</li>
+                        <li><strong>Greutate:</strong> 1645 kg</li>
+                        <li><strong>Număr uși:</strong> 4</li>
+                        <li><strong>Capacitate rezervor:</strong> 58L</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Consum & Emisii</h3>
+                    <ul>
+                        <li><strong>Consum mediu:</strong> 5.8 L/100km</li>
+                        <li><strong>Emisii CO2:</strong> 152 g/km</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Dotări Tehnice</h3>
+                    <ul>
+                        <li><strong>Sistem de navigație:</strong> MMI Navigation plus cu MMI touch</li>
+                        <li><strong>Primă înmatriculare:</strong> 2020</li>
+                        <li><strong>Vârsta vehiculului:</strong> 3 ani</li>
+                        <li><strong>Kilometraj:</strong> 55.000 km</li>
+                        <li><strong>Culoare:</strong> Manhattan Grey</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Confort & Interior</h3>
+                    <ul>
+                        <li><strong>Răcire și încălzire:</strong> Scaune încălzite față, climatizare automată pe 3 zone
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+
+            <h2>Descriere:</h2>
+            <p>
+                Audi A4 este o berlină de lux care reprezintă perfect echilibrul între elegantă și performanță. Cu
+                motorul său eficient de 2.0L TDI și sistemul quattro de tracțiune integrală, acest model oferă o
+                experiență de conducere precisă și rafinată. Interiorul este definit de materiale premium și tehnologie
+                avansată, inclusiv sistemul MMI Navigation plus cu ecran tactil de 10.1 inch.
+            </p>
+            <p>
+                Siguranța este asigurată de sisteme moderne de asistență, precum Audi pre sense, cruise control adaptiv
+                și asistent pentru menținerea benzii de rulare. Manevrabilitatea și confortul sunt îmbunătățite de
+                suspensia sport cu amortizare adaptivă și direcția progresivă.
+            </p>
+            <p>
+                Pentru cei care caută o berlină premium ce combină luxul cu eficiența și tehnologia, Audi A4 este
+                alegerea ideală. Este perfectă atât pentru deplasările zilnice în oraș, cât și pentru călătoriile lungi,
+                oferind confort, siguranță și prestigiu.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-image" class="lightbox-content" src="" alt="Zoomed">
+</div>
+
+<!-- Zona Dotări și Specificații -->
+<section class="additional-features">
+    <h2>Dotări Suplimentare:</h2>
+    <div class="features-grid">
+        <div class="feature-item">Matrix LED faruri</div>
+        <div class="feature-item">Audi parking system plus</div>
+        <div class="feature-item">Pachet S line exterior</div>
+        <div class="feature-item">Bang & Olufsen Premium Sound</div>
+        <div class="feature-item">Virtual Cockpit Plus</div>
+        <div class="feature-item">Plafon panoramic</div>
+        <div class="feature-item">Audi phone box</div>
+        <div class="feature-item">Lane assist</div>
+    </div>
+</section>
+
+<!-- Zona Contact cu Vânzătorul -->
+<section class="contact-seller">
+    <h2>Contactează Vânzătorul</h2>
+    <div class="contact-container">
+        <!-- Formular -->
+        <form action="mailto:vanzator@autolux.ro" method="post" enctype="text/plain">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Trimite Mesajul</button>
+        </form>
+
+        <!-- Informațiile Vânzătorului -->
+        <div class="seller-info">
+            <img class="seller-image" src="../images/audi-a4/vanzator.jpg" alt="Vânzător">
+            <div class="seller-details">
+                <p><strong>Vânzător:</strong> Mihai Ionescu</p>
+                <p><strong>Locație:</strong> București</p>
+                <div class="seller-rating">
+                    <h3>Rating vânzător:</h3>
+                    <div class="stars">
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star half-filled"></div>
+                    </div>
+                    <p>4.7/5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2025 Motorscape - Toate drepturile rezervate</p>
+    </div>
+</footer>
+<script src="../js/script-pagina-masina.js"></script>
+</body>
+</html>

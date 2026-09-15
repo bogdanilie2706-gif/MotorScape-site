@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lexus LC500 - Motorscape</title>
+    <link rel="stylesheet" href="../css/stil-pagina-masina.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="../index.html"><h1>Motorscape</h1></a>
+    <section class="navigation-container">
+        <div class="navigation-links">
+            <a href="../acasa.html" class="nav-btn">Acasă</a>
+            <a href="../index.html" class="nav-btn">Pagina principală</a>
+            <a href="../despre.html" class="nav-btn">Despre</a>
+            <a href="../contact.html" class="nav-btn">Contact</a>
+        </div>
+    </section>
+</header>
+
+<div class="container">
+    <a href="../index.html" class="back-btn">Înapoi la listă</a>
+    <h1 class="car-title">Lexus LC500</h1>
+
+    <div class="car-content">
+        <div class="gallery-wrapper">
+            <div class="gallery-container">
+                <div class="gallery">
+                    <img class="gallery-image" src="../images/lexus-lc500/1.jpg" alt="Lexus LC500 - 1">
+                    <img class="gallery-image" src="../images/lexus-lc500/2.jpg" alt="Lexus LC500 - 2">
+                    <img class="gallery-image" src="../images/lexus-lc500/3.jpg" alt="Lexus LC500 - 3">
+                    <img class="gallery-image" src="../images/lexus-lc500/4.jpg" alt="Lexus LC500 - 4">
+                    <img class="gallery-image" src="../images/lexus-lc500/5.jpg" alt="Lexus LC500 - 5">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+            </div>
+            <span class="price-tag">95.000€</span>
+        </div>
+
+        <div class="gallery-indicators" id="gallery-indicators"></div>
+
+        <div class="car-details">
+            <h2>Caracteristici Tehnice:</h2>
+            <div class="specs-details">
+
+                <section>
+                    <h3>Motor & Performanță</h3>
+                    <ul>
+                        <li><strong>Motor:</strong> 5.0L V8, benzină, 471 CP</li>
+                        <li><strong>Putere:</strong> 471 CP</li>
+                        <li><strong>Cutie de viteză:</strong> Automată cu 10 trepte</li>
+                        <li><strong>Tracțiune:</strong> Spate</li>
+                        <li><strong>Suspensie:</strong> Suspensie adaptivă sport</li>
+                        <li><strong>Autonomie:</strong> 650 km (în condiții de drum mixt)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Dimensiuni & Greutate</h3>
+                    <ul>
+                        <li><strong>Dimensiuni:</strong> Lungime 4770 mm, Lățime 1920 mm, Înălțime 1345 mm</li>
+                        <li><strong>Greutate:</strong> 1935 kg</li>
+                        <li><strong>Număr uși:</strong> 2</li>
+                        <li><strong>Capacitate rezervor:</strong> 82L</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Consum & Emisii</h3>
+                    <ul>
+                        <li><strong>Consum mediu:</strong> 11.6 L/100km</li>
+                        <li><strong>Emisii CO2:</strong> 265 g/km</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Dotări Tehnice</h3>
+                    <ul>
+                        <li><strong>Sistem de navigație:</strong> Lexus Premium Navigation cu ecran de 10.3 inch</li>
+                        <li><strong>Primă înmatriculare:</strong> 2021</li>
+                        <li><strong>Vârsta vehiculului:</strong> 2 ani</li>
+                        <li><strong>Kilometraj:</strong> 25.000 km</li>
+                        <li><strong>Culoare:</strong> Structural Blue</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3>Confort & Interior</h3>
+                    <ul>
+                        <li><strong>Răcire și încălzire:</strong> Scaune sport încălzite și ventilate cu memorie</li>
+                    </ul>
+                </section>
+
+            </div>
+
+
+            <h2>Descriere:</h2>
+            <p>
+                Lexus LC500 este un grand tourer de lux care redefinește experiența de conducere sportivă. Propulsat de
+                un motor V8 atmosferic de 5.0L, acest model oferă un sunet spectaculos și performanțe impresionante.
+                Designul exterior este o capodoperă de artă automobilistică, cu linii futuriste și detalii atent
+                studiate.
+            </p>
+            <p>
+                Interiorul este un exemplu perfect de lux și artizanat japonez, cu materiale premium și atenție la
+                detalii. Sistemul audio Mark Levinson cu 13 difuzoare oferă o experiență sonoră de excepție, iar
+                tehnologiile de siguranță Lexus Safety System+ asigură protecție maximă.
+            </p>
+            <p>
+                LC500 este mașina perfectă pentru cei care doresc un grand tourer exclusivist ce combină performanța cu
+                luxul și rafinamentul. Este o alegere excelentă pentru călătorii lungi și pentru cei care apreciază arta
+                ingineriei japoneze la cel mai înalt nivel.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <span class="close">&times;</span>
+    <img id="lightbox-image" class="lightbox-content" src="" alt="Zoomed">
+</div>
+
+<!-- Zona Dotări și Specificații -->
+<section class="additional-features">
+    <h2>Dotări Suplimentare:</h2>
+    <div class="features-grid">
+        <div class="feature-item">Triple LED headlamps</div>
+        <div class="feature-item">Sistem audio Mark Levinson</div>
+        <div class="feature-item">Pachet Sport+</div>
+        <div class="feature-item">Plafon panoramic din sticlă</div>
+        <div class="feature-item">Head-up display color</div>
+        <div class="feature-item">Jante din aliaj 21"</div>
+        <div class="feature-item">Scaune sport semi-aniline</div>
+        <div class="feature-item">Launch Control</div>
+    </div>
+</section>
+
+<!-- Zona Contact cu Vânzătorul -->
+<section class="contact-seller">
+    <h2>Contactează Vânzătorul</h2>
+    <div class="contact-container">
+        <!-- Formular -->
+        <form action="mailto:vanzator@autolux.ro" method="post" enctype="text/plain">
+            <label for="name">Nume:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Trimite Mesajul</button>
+        </form>
+
+        <!-- Informațiile Vânzătorului -->
+        <div class="seller-info">
+            <img class="seller-image" src="../images/lexus-lc500/vanzator.jpg" alt="Vânzător">
+            <div class="seller-details">
+                <p><strong>Vânzător:</strong> Elena Ionescu</p>
+                <p><strong>Locație:</strong> București</p>
+                <div class="seller-rating">
+                    <h3>Rating vânzător:</h3>
+                    <div class="stars">
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                        <div class="star filled"></div>
+                    </div>
+                    <p>5.0/5</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <p>&copy; 2025 Motorscape - Toate drepturile rezervate</p>
+    </div>
+</footer>
+<script src="../js/script-pagina-masina.js"></script>
+</body>
+</html>
